@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription & Contact | AfriConnect Summit 2026</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="internal-hero">
+            <h1>Inscription & Contact</h1>
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a> &gt; <span>Contact</span>
+            </nav>
+        </section>
+
+        <section id="contact-wrapper">
+            
+            <div class="contact-form-container">
+                <h2>Réservez votre place</h2>
+                <div id="success-message" class="hidden-message">Votre inscription a bien été enregistrée !</div>
+                
+                <form id="registration-form" novalidate>
+                    <div class="form-group">
+                        <label for="fullname">Nom complet *</label>
+                        <input type="text" id="fullname" required>
+                        <span class="error-text"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse Email *</label>
+                        <input type="email" id="email" required>
+                        <span class="error-text"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" required>
+                        <span class="error-text"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ticket-type">Type de participation *</label>
+                        <select id="ticket-type" required>
+                            <option value="">-- Choisir une option --</option>
+                            <option value="standard">Présentiel - Standard</option>
+                            <option value="vip">Présentiel - VIP</option>
+                            <option value="online">Virtuel (En ligne)</option>
+                        </select>
+                        <span class="error-text"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Pays africain d'origine *</label>
+                        <select id="country" required>
+                            <option value="">-- Sélectionner votre pays --</option>
+                            <option value="SN">Sénégal</option>
+                            <option value="CI">Côte d'Ivoire</option>
+                            <option value="MA">Maroc</option>
+                            <option value="CM">Cameroun</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="TG">Togo</option>
+                            <option value="BJ">Bénin</option>
+                            <option value="NE">Niger</option>
+                            <option value="CD">RDC</option>
+                            <option value="GA">Gabon</option>
+                        </select>
+                        <span class="error-text"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivation">Lettre de motivation / Message (Min. 20 car.) *</label>
+                        <textarea id="motivation" rows="5" required></textarea>
+                        <span class="error-text"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Envoyer la demande</button>
+                </form>
+            </div>
+
+            <div class="contact-info-container">
+                <h2>Lieu de l'événement</h2>
+                <p><i class="bi bi-geo-alt"></i> Centre International de Conférences Abdou Diouf (CICAD), Dakar</p>
+                
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15438.487771746768!2d-17.47648345!3d14.67733795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec112674e2d2757%3A0x6e2ee32d207ec149!2sDakar%252C%2520S%25C3%25A9n%25C3%25A9gal!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    </body>
+</html>
