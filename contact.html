@@ -8,88 +8,88 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <section class="internal-hero">
-            <h1>Inscription & Contact</h1>
-            <nav class="breadcrumb" aria-label="Fil d'Ariane">
-                <a href="index.html">Accueil</a> &gt; <span>Contact</span>
-            </nav>
-        </section>
 
-        <section id="contact-wrapper">
-            
-            <div class="contact-form-container">
+    <header>
+        <div class="logo">AfriConnect Summit 2026</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="programme.html">Programme</a>
+            <a href="intervenants.html">Intervenants</a>
+            <a href="contact.html" class="active">Inscription</a>
+        </nav>
+        <button id="theme-toggle">🌙 Mode Sombre</button>
+    </header>
+
+    <main class="page-container">
+        <h1>Inscription & Contact</h1>
+        <p class="breadcrumb"><a href="index.html">Accueil</a> > Contact</p>
+
+        <div class="contact-layout">
+            <!-- Formulaire d'inscription -->
+            <section class="form-section">
                 <h2>Réservez votre place</h2>
-                <div id="success-message" class="hidden-message">Votre inscription a bien été enregistrée !</div>
-                
-                <form id="registration-form" novalidate>
+                <form id="registration-form">
                     <div class="form-group">
                         <label for="fullname">Nom complet *</label>
-                        <input type="text" id="fullname" required>
-                        <span class="error-text"></span>
+                        <input type="text" id="fullname" required placeholder="Votre nom complet">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Adresse Email *</label>
-                        <input type="email" id="email" required>
-                        <span class="error-text"></span>
+                        <input type="email" id="email" required placeholder="exemple@domaine.com">
                     </div>
 
                     <div class="form-group">
                         <label for="phone">Téléphone *</label>
-                        <input type="tel" id="phone" required>
-                        <span class="error-text"></span>
+                        <input type="tel" id="phone" required placeholder="+221 ...">
                     </div>
 
                     <div class="form-group">
-                        <label for="ticket-type">Type de participation *</label>
-                        <select id="ticket-type" required>
+                        <label for="participation">Type de participation *</label>
+                        <select id="participation" required>
                             <option value="">-- Choisir une option --</option>
-                            <option value="standard">Présentiel - Standard</option>
-                            <option value="vip">Présentiel - VIP</option>
-                            <option value="online">Virtuel (En ligne)</option>
+                            <option value="presentiel">Présentiel</option>
+                            <option value="en-ligne">En ligne (Virtuel)</option>
+                            <option value="vip">Pass VIP</option>
                         </select>
-                        <span class="error-text"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="country">Pays africain d'origine *</label>
                         <select id="country" required>
                             <option value="">-- Sélectionner votre pays --</option>
-                            <option value="SN">Sénégal</option>
-                            <option value="CI">Côte d'Ivoire</option>
-                            <option value="MA">Maroc</option>
-                            <option value="CM">Cameroun</option>
-                            <option value="BF">Burkina Faso</option>
-                            <option value="TG">Togo</option>
-                            <option value="BJ">Bénin</option>
-                            <option value="NE">Niger</option>
-                            <option value="CD">RDC</option>
-                            <option value="GA">Gabon</option>
+                            <option value="senegal">Sénégal</option>
+                            <option value="ghana">Ghana</option>
+                            <option value="cote-divoire">Côte d'Ivoire</option>
+                            <option value="cameroun">Cameroun</option>
+                            <option value="autre">Autre</option>
                         </select>
-                        <span class="error-text"></span>
                     </div>
 
                     <div class="form-group">
-                        <label for="motivation">Lettre de motivation / Message (Min. 20 car.) *</label>
-                        <textarea id="motivation" rows="5" required></textarea>
-                        <span class="error-text"></span>
+                        <label for="message">Lettre de motivation / Message *</label>
+                        <textarea id="message" rows="4" required placeholder="Votre message (Min. 20 caractères)"></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-submit">Envoyer la demande</button>
+                    <button type="submit" class="btn">Envoyer la demande</button>
                 </form>
-            </div>
+            </section>
 
-            <div class="contact-info-container">
+            <!-- Infos Lieu -->
+            <section class="location-section">
                 <h2>Lieu de l'événement</h2>
-                <p><i class="bi bi-geo-alt"></i> Centre International de Conférences Abdou Diouf (CICAD), Dakar</p>
-                
-                <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15438.487771746768!2d-17.47648345!3d14.67733795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec112674e2d2757%3A0x6e2ee32d207ec149!2sDakar%252C%2520S%25C3%25A9n%25C3%25A9gal!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>📍 Centre International de Conférences Abdou Diouf (CICAD), Dakar</p>
+                <div class="map-container">
+                    <a href="https://maps.google.com" target="_blank" class="btn-secondary">Ouvrir dans Maps ↗</a>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    </body>
+    <footer>
+        <p>&copy; 2026 AfriConnect Summit. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>

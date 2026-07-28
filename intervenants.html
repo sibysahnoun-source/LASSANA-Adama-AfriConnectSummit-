@@ -8,52 +8,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <section class="internal-hero">
-            <h1>Les Intervenants</h1>
-            <nav class="breadcrumb" aria-label="Fil d'Ariane">
-                <a href="index.html">Accueil</a> > <span>Intervenants</span>
-            </nav>
-        </section>
 
-        <section id="filter-section">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="tech">IA & Tech</button>
-                <button class="filter-btn" data-filter="business">Business</button>
-                <button class="filter-btn" data-filter="design">Design</button>
-                <button class="filter-btn" data-filter="data">Data</button>
+    <header>
+        <div class="logo">AfriConnect Summit 2026</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="programme.html">Programme</a>
+            <a href="intervenants.html" class="active">Intervenants</a>
+            <a href="contact.html">Inscription</a>
+        </nav>
+        <button id="theme-toggle">🌙 Mode Sombre</button>
+    </header>
+
+    <main class="page-container">
+        <h1>Les Intervenants</h1>
+        <p class="breadcrumb"><a href="index.html">Accueil</a> > Intervenants</p>
+
+        <!-- Filtres par catégorie -->
+        <div class="filter-buttons">
+            <button class="filter-btn active">Tous</button>
+            <button class="filter-btn">IA & Tech</button>
+            <button class="filter-btn">Business</button>
+            <button class="filter-btn">Design</button>
+            <button class="filter-btn">Data</button>
+        </div>
+
+        <!-- Grille d'intervenants -->
+        <div class="speakers-grid">
+            <div class="speaker-card">
+                <img src="images/istockphoto-1587604256-1024x1024.jpg" alt="Dr. Aminata Touré">
+                <h3>Dr. Aminata Touré</h3>
+                <p class="role">Experte en IA Émergente</p>
+                <p class="country">📍 Sénégal</p>
             </div>
-        </section>
-
-        <section id="speakers-section">
-            <div class="speakers-grid">
-                
-                <article class="speaker-card" data-category="tech">
-                    <div class="speaker-img-wrapper">
-                        <img src="images/istockphoto-1587604256-1024x1024.jpg" alt="Portrait de Dr. Aminata Touré">
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Dr. Aminata Touré</h3>
-                        <p class="specialty">Experte en IA Émergente</p>
-                        <p class="country"><i class="bi bi-geo-alt"></i> Sénégal</p>
-                    </div>
-                </article>
-
-                <article class="speaker-card" data-category="business">
-                    <div class="speaker-img-wrapper">
-                        <img src="images/istockphoto-2234639448-1024x1024 (1).jpg" alt="Portrait de Samuel Eto'o">
-                    </div>
-                    <div class="speaker-info">
-                        <h3>Kofi Mensah</h3>
-                        <p class="specialty">Investisseur & VC Partner</p>
-                        <p class="country"><i class="bi bi-geo-alt"></i> Ghana</p>
-                    </div>
-                </article>
-
-                </div>
-        </section>
+            <div class="speaker-card">
+                <img src="images/istockphoto-2234639448-1024x1024 (1).jpg" alt="Kofi Mensah">
+                <h3>Kofi Mensah</h3>
+                <p class="role">Investisseur & VC Partner</p>
+                <p class="country">📍 Ghana</p>
+            </div>
+        </div>
     </main>
 
-    </body>
+    <footer>
+        <p>&copy; 2026 AfriConnect Summit. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
